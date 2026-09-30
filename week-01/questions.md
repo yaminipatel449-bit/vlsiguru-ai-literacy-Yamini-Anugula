@@ -98,7 +98,6 @@ When you submit a prompt to a Large Language Model (LLM), it does not "think" li
 
 ### E — Evidence
 
-#### Text Processing Flow Diagram:
 ```text
 [ User Prompt ]
       │
@@ -116,6 +115,7 @@ When you submit a prompt to a Large Language Model (LLM), it does not "think" li
       │
       ▼
 [ Generated Response ] ◄─── (Repeats loop until finished)
+```
 
 
 Why Fluent AI Can Still Be False (Hallucinations):
@@ -133,7 +133,6 @@ What I Learned: Language models are not facts engines; they are pattern-matching
 
 Key Takeaway: You can never rely solely on how confident or well-written an AI response sounds. Because it optimizes for probable token sequences, verification against trusted external sources is essential for any technical or factual work.
 
------
 
 ## Q4 — Hallucination Experiment: Can AI Sound Confident and Still Be Wrong?
 
@@ -145,13 +144,14 @@ To test whether AI models can sound confident while providing incomplete or misl
 #### Experiment Table:
 
 | Field | Model 1 (ChatGPT / GPT-4o) | Model 2 (Gemini 1.5 Flash) |
-| :--- | :--- | :--- |
+|---|---|---|
 | **Exact Prompt** | *"What is the difference between setup time and hold time in digital flip-flops, and what happens if hold time is violated?"* | *"What is the difference between setup time and hold time in digital flip-flops, and what happens if hold time is violated?"* |
 | **Response Summary** | Correctly defined setup time (before clock edge) and hold time (after clock edge). Stated that a hold time violation causes metastability and data corruption. | Correctly defined both timing constraints. Correctly noted that hold time violations lead to metastability, but initially overstated that it "destroys the physical circuit." |
 | **Verified Claim** | Hold time violation causes metastability (unstable output state), leading to data corruption, but does NOT physically destroy hardware. | Hold time violation causes metastability, but circuit hardware remains physically undamaged. |
 | **Primary Reference Evidence** | *Digital Design: Principles and Practices (John F. Wakerly)* — confirms metastability occurs when hold timing is missed, resulting in temporary non-deterministic logic levels, not physical damage. | *IEEE / Academic Course Notes on VLSI Timing Analysis* — confirms metastability is an output timing failure, not a physical hardware failure. |
 | **Result** | Correct & Precise | Partly Unsupported / Overstated (confused functional timing failure with physical failure) |
 | **Key Lesson** | Fluent AI models can mix accurate core concepts with exaggerated or incorrect consequences while maintaining a completely confident tone. |
+
 
 ### E — Evidence
 
