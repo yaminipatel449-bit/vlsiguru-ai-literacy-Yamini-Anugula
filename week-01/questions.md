@@ -349,50 +349,52 @@ I verified this principle using **Stanford CS224N (Natural Language Processing w
 
 **What I Learned:** Complex AI behaviors (coding, chatting, summarizing) are emergent capabilities built on top of a single core mechanism: next-token prediction.
 
+
 ## Q10 — Design Your Personal AI Verification Protocol
 
 ### A — Answer
 
 #### My 7-Step Personal AI Verification Protocol:
 
-1. **Step 1: Define Problem & Bounds:** Write down the explicit objective, expected parameters, and expected outcome before prompting the AI.
+1. **Step 1: Define Problem & Bounds:** Write down the explicit objective, parameters, and expected outcome before prompting the AI.
    - *Failure caught:* Prevents accepting off-topic or subtly altered goals.
-2. **Step 2: Inspect Assumptions & Prompt Inputs:** Check the prompt for leading bias, incorrect premises, or missing context[cite: 1].
-   - *Failure caught:* Avoids "garbage-in, garbage-out" errors where AI confirms flawed user assumptions[cite: 1].
-3. **Step 3: Evaluate Internal Logic & Consistency:** Read the generated response step-by-step to check for self-contradictions or logical gaps[cite: 1].
-   - *Failure caught:* Catches internal reasoning contradictions in multi-step answers[cite: 1].
-4. **Step 4: Check Primary / Authoritative Sources:** Cross-reference critical factual claims, formulas, or syntax against trusted textbooks or official documentation[cite: 1].
-   - *Failure caught:* Eliminates plausible-sounding hallucinations and false citations[cite: 1].
-5. **Step 5: Test & Reproduce Results:** Run calculations, execute code snippets, or test recommended steps manually[cite: 1].
-   - *Failure caught:* Uncovers execution bugs and edge-case errors[cite: 1].
-6. **Step 6: Assess Failure Risks & Edge Cases:** Identify what happens if the AI output is wrong and verify safety/boundary conditions[cite: 1].
-   - *Failure caught:* Prevents catastrophic failure in real-world deployment[cite: 1].
-7. **Step 7: Final Human Decision (Accept / Reject / Revise):** Make an active, accountable judgment on whether to use, tweak, or discard the result[cite: 1].
-   - *Failure caught:* Prevents passive reliance and maintains full human ownership over the work[cite: 1].
+2. **Step 2: Inspect Assumptions & Inputs:** Check the prompt for leading bias, incorrect premises, or missing context.
+   - *Failure caught:* Avoids "garbage-in, garbage-out" errors where the AI simply confirms flawed user assumptions.
+3. **Step 3: Evaluate Internal Logic & Consistency:** Read the generated response step-by-step to check for self-contradictions or logical gaps.
+   - *Failure caught:* Catches internal reasoning contradictions in multi-step answers.
+4. **Step 4: Check Primary / Authoritative Sources:** Cross-reference critical factual claims, formulas, or syntax against trusted textbooks or official documentation.
+   - *Failure caught:* Eliminates plausible-sounding hallucinations and false citations.
+5. **Step 5: Test & Reproduce Results:** Run calculations, execute code snippets, or test recommended steps manually.
+   - *Failure caught:* Uncovers execution bugs and edge-case errors.
+6. **Step 6: Assess Failure Risks & Edge Cases:** Identify what happens if the AI output is wrong and verify safety/boundary conditions.
+   - *Failure caught:* Prevents catastrophic failure in real-world deployment.
+7. **Step 7: Final Human Decision (Accept / Reject / Revise):** Make an active, accountable judgment on whether to use, tweak, or discard the result.
+   - *Failure caught:* Prevents passive reliance and maintains full human ownership over the work.
 
 #### Worked Non-VLSI Example (Scaling a Cooking Recipe):
-- **Task:** Scale a standard cake recipe from 4 servings to 12 servings using an AI assistant[cite: 1].
+- **Task:** Scale a standard cake recipe from 4 servings to 12 servings using an AI assistant.
 - **Protocol Application:**
-  1. *Define:* Target is exactly 3x yield[cite: 1].
-  2. *Inspect:* Input measurements verified against original recipe[cite: 1].
-  3. *Logic:* AI calculated 3x flour and sugar, but also suggested 3x baking powder[cite: 1].
-  4. *Source Check:* Checked culinary reference—leavening agents do not scale linearly (3x baking powder ruins texture)[cite: 1].
-  5. *Test:* Adjusted recipe parameters based on baking standards[cite: 1].
-  6. *Risk:* Ruining the baked cake[cite: 1].
-  7. *Decision:* **Revise** — accepted scaled bulk ingredients, manually corrected the baking powder ratio[cite: 1].
+  1. *Define:* Target is exactly 3x yield.
+  2. *Inspect:* Input measurements verified against original recipe.
+  3. *Logic:* AI calculated 3x flour and sugar, but also suggested 3x baking powder.
+  4. *Source Check:* Checked culinary reference—leavening agents do not scale linearly (3x baking powder ruins texture).
+  5. *Test:* Adjusted recipe parameters based on baking standards.
+  6. *Risk:* Ruining the baked cake.
+  7. *Decision:* **Revise** — accepted scaled bulk ingredients, manually corrected the baking powder ratio.
 
 
 ### E — Evidence
 
-- **Observed Result:** Applying this protocol caught a non-linear scaling error that would have ruined the final product, proving that structured verification catches subtle, plausible errors[cite: 1].
+- **Observed Result:** Applying this protocol caught a non-linear scaling error that would have ruined the final product, proving that structured verification catches subtle, plausible errors.
+
 
 ### V — Verification
 
 I verified this verification protocol against **NASA Software Assurance Standard (NASA-STD-8739.8)**:
-- Confirms that verification systems require formal problem definition, assumption auditing, primary source validation, boundary testing, and formal human sign-off[cite: 1].
+- Confirms that verification systems require formal problem definition, assumption auditing, primary source validation, boundary testing, and formal human sign-off.
+
 
 ### R — Reflection
 
-- **What I Learned:** Verification is a systematic discipline, not a quick spot-check[cite: 1]. I will reuse and refine this 7-step protocol throughout the rest of this 16-week course[cite: 1].
-
+- **What I Learned:** Verification is a systematic discipline, not a quick spot-check. I will reuse and refine this 7-step protocol throughout the rest of this 16-week course.
 
