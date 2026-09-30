@@ -29,15 +29,7 @@ Ex: An AI assistant that reads my schedule, finds open slots, sends meeting invi
 
 ### Concept Map:
 
-[ Artificial Intelligence (AI) ]
-       │
-       └─── [ Machine Learning (ML) ]
-                  │
-                  └─── [ Deep Learning (DL) ]
-                             │
-                             └─── [ Generative AI (GenAI) ]
-                                               |
-                                               └───  System/Workflow Level: [ AI Agent ]  - (Uses GenAI/LLM as the thinking core + connects to tools & memory to take action)
+[ Artificial Intelligence (AI) ]---> [ Machine Learning (ML) ]---> [ Deep Learning (DL) ]---> [ Generative AI (GenAI) ]---> System/Workflow Level: [ AI Agent ]  - (Uses GenAI/LLM as the thinking core + connects to tools & memory to take action)
 
 ### V — Verification
 # I cross-checked these definitions with two primary technical resources:
