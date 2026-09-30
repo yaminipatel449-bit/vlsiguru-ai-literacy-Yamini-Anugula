@@ -1,5 +1,4 @@
 # Week 01 Questions
-_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
 ### Q1 — AI vs ML vs DL vs GenAI vs Agents
 
@@ -72,3 +71,58 @@ I verified this conceptual distinction using two standard educational references
 
 - **What I Learned:** Calling every smart feature "AI" is a common marketing mistake. Automation and intelligence are not the same thing—if a system just checks a pre-written rule or runs a fixed formula, it is traditional software, no matter how fast or useful it is.
 - **Key Takeaway:** An AI label requires that the system learns from data, detects probabilistic patterns, or generates content rather than merely executing human-written conditional code.
+
+## Q3 — What Happens When You Ask an LLM a Question?
+
+### A — Answer
+
+#### Intuitive Core Process:
+When you submit a prompt to a Large Language Model (LLM), it does not "think" like a human or search an internal database for pre-written answers. Instead, it breaks your input into smaller chunks called tokens, processes their mathematical relationships based on its training, predicts the most probable next token one by one, and builds out a response word by word.
+
+#### Core Terms Explained:
+- **Prompt:** The text, question, or instruction given by the user to the model.
+- **Token:** The basic unit of text processed by an LLM (a token can be a whole word, a sub-word like "ing", or even a single character).
+- **Context (or Context Window):** The maximum amount of text (prompt + previous conversation history) the model can hold in memory at one time while calculating the next token.
+- **Probability:** A statistical score assigned to every possible token in the model's vocabulary, representing how likely that token comes next.
+- **Next-Token Prediction:** The central algorithm where the model evaluates probabilities and selects the next most appropriate token, repeats the loop, and appends it to the sequence.
+- **Generated Response:** The final output created token-by-token until the model generates a stop sequence.
+
+#### Training vs. Inference:
+- **Training:** The expensive, multi-stage phase where a model analyzes massive amounts of text data over weeks/months to learn statistical relationships and adjust its parameters (weights).
+- **Inference:** The operational phase where a user gives a prompt, and the trained, static model uses its fixed parameters to calculate output probabilities and generate a response in real-time.
+
+### E — Evidence
+
+#### Text Processing Flow Diagram:
+```text
+[ User Prompt ]
+      │
+      ▼
+[ Tokenizer ] ───► (Breaks text into token IDs)
+      │
+      ▼
+[ Model Processing ] ───► (Evaluates context & patterns via trained weights)
+      │
+      ▼
+[ Probability Distribution ] ───► (Scores likely next tokens in vocabulary)
+      │
+      ▼
+[ Next Token Selection ] ───► (Picks next token based on sampling/temperature)
+      │
+      ▼
+[ Generated Response ] ◄─── (Repeats loop until finished)
+
+Why Fluent AI Can Still Be False (Hallucinations):
+Because an LLM generates language based on statistical likelihood rather than factual verification, it prioritizes linguistic fluency and structural pattern-matching over truth. If a false statement uses words that frequently appear together in persuasive or plausible contexts, the model will output a smooth, convincing sentence even if the underlying claim is entirely incorrect or unsupported.
+
+V — Verification
+I verified this mental model against two authoritative educational sources:
+
+3Blue1Brown (Grant Sanderson): "Neural Networks & Transformers Series" — visually demonstrates how transformers calculate attention and output a probability distribution across the entire vocabulary for the next token.
+
+Andrej Karpathy (former AI Director at Tesla / OpenAI co-founder): "State of GPT" guide — confirms that LLMs operate purely as probabilistic next-token predictors during inference based on fixed weights learned during training.
+
+R — Reflection
+What I Learned: Language models are not facts engines; they are pattern-matching engines. The output feels fluent and intelligent because the model has mastered syntax, grammar, and semantic relationships during training, not because it "knows" or checks facts in real-time.
+
+Key Takeaway: You can never rely solely on how confident or well-written an AI response sounds. Because it optimizes for probable token sequences, verification against trusted external sources is essential for any technical or factual work.
