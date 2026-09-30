@@ -133,6 +133,8 @@ What I Learned: Language models are not facts engines; they are pattern-matching
 
 Key Takeaway: You can never rely solely on how confident or well-written an AI response sounds. Because it optimizes for probable token sequences, verification against trusted external sources is essential for any technical or factual work.
 
+-----
+
 ## Q4 — Hallucination Experiment: Can AI Sound Confident and Still Be Wrong?
 
 ### A — Answer
