@@ -53,19 +53,24 @@ Ex: An AI assistant that reads my schedule, finds open slots, sends meeting invi
 | **D. AI Assistant Summary** | Generative AI | Uses a large language model to interpret context, extract key meaning, and generate fresh explanatory text. |
 | **E. Navigation ETA Prediction** | Machine Learning-Based AI | Dynamically processes real-time traffic data, weather, historical speeds, and route patterns to predict estimated travel duration. |
 
+----
+
 #### Deterministic Software vs. AI Systems:
 Traditional deterministic software relies entirely on explicit, human-coded instructions (`if/else` logic) where the exact outcome for any given input is pre-engineered. An AI system, by contrast, relies on statistical models trained on data. Instead of following fixed hardcoded paths, it infers patterns, learns general rules, and generalizes to handle unseen inputs or generate novel outputs based on probability.
+
 
 ### E — Evidence
 
 - **Scenario B vs Scenario C Comparison:** A rule-based spam filter would fail if spammers simply altered one word (e.g., spelling "FREE" as "F R E E"). An ML-based spam filter detects semantic patterns across multiple features (sender domain, token distributions, link structures) without needing a manual rule for every variation.
 - **Observation:** Deterministic programs always produce identical, predictable outputs for a given input, whereas AI models evaluate probabilities and can handle nuance or variability in real-world data.
 
+
 ### V — Verification
 
 I verified this conceptual distinction using two standard educational references:
 1. **Google Cloud AI/ML Fundamentals:** *"Introduction to Machine Learning"* — explicitly defines the shift from traditional programming (Input + Rules = Output) to Machine Learning (Input + Output = Rules/Model).
 2. **MIT OpenCourseWare (6.0001):** Confirms that deterministic algorithms execute explicit instructions step-by-step, whereas machine learning systems approximate functions and adapt decisions based on training data distributions.
+
 
 ### R — Reflection
 
