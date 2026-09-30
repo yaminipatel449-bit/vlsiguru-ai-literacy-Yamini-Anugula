@@ -239,7 +239,7 @@ I verified the technical trade-offs against **Xilinx WP272 ("Get Smart About Res
                      │
                      ▼
 [ Final Goal Accomplished / Output to User ]
-
+```
 
 ### Chatbot vs. AI Agent:
 A chatbot is a reactive conversational interface that generates text based on user prompts. An AI Agent is an active decision-making system that breaks down a goal, executes multi-step plans, uses tools independently, checks its own work, and iterates until the objective is met.
@@ -265,13 +265,12 @@ What I Learned: Models generate text, but agents perform work. The shift from ba
 #### Human-in-the-Loop Risk Table:
 
 | Situation / Task | Possible AI Failure Mode | Required Verification | Who / What Approves |
-| :--- | :--- | :--- | :--- |
+|---|---|---|---|
 | **1. Medical Diagnosis Summary** | AI misinterprets clinical notes or invents an inaccurate symptom/drug interaction (hallucination). | Cross-reference with primary lab data, patient history, and official diagnostic guidelines. | Licensed Medical Professional / Doctor |
 | **2. Legal Contract / Policy Draft** | AI includes invalid clauses or references non-existent legal precedents. | Line-by-line legal review against verified statutory codes and case law. | Qualified Legal Counsel / Attorney |
 | **3. Financial Investment Decision** | AI relies on outdated market data or flawed predictive assumptions. | Perform independent financial audit, risk modeling, and compliance check. | Financial Advisor / Risk Officer |
 | **4. Safety-Critical Code Deployment** | AI generates code with subtle memory leaks or security vulnerabilities. | Run automated unit tests, static code analysis, and manual peer code review. | Lead Software / Systems Engineer |
 | **5. Hiring / Resume Filtering** | AI exhibits implicit bias based on patterns in training data. | Audit scoring criteria and manually review candidate qualifications. | Human Resources Manager / Hiring Panel |
-
 #### Golden Rule for Responsible AI Work:
 > **"Treat AI output as a draft from a fast but junior assistant: always inspect assumptions, verify factual claims against primary sources, and retain human ownership over final decisions."**
 
