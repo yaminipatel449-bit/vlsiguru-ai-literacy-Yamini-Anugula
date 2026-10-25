@@ -18,7 +18,8 @@
 [ Artificial Intelligence (AI) ]
    └── [ Machine Learning (ML) ]
           └── [ Deep Learning (DL) ]
-                 └── [ Generative AI (GenAI) ]
+                 └── [ Generative AI (GenAI) ] ```
+
 
 Explanations:
 Artificial Intelligence (AI): The broad field of computer science focused on building systems capable of performing tasks that typically require human intelligence (e.g., decision making, problem solving).
