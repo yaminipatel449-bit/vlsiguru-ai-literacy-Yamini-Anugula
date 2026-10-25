@@ -1,6 +1,7 @@
 # CS50P Python Practice & Week 01 Reflection
 
 ## CS50P Week 0 Practice Script
+
 Below is a simple Python program written during CS50P Week 0 study. It calculates clock period given frequency in MHz:
 
 ```python
@@ -22,24 +23,4 @@ def main():
         print("Invalid input! Please enter a numerical value.")
 
 if __name__ == "__main__":
-    main()```
-
-
--------
-
-
-### Final Reflection
-1. Most Useful Learning
-The distinction between traditional deterministic software and probabilistic ML models, alongside understanding why hardware accelerators (GPUs/NPUs) are fundamentally required for parallel tensor math.
-
-2. Initial Misconception
-I initially thought LLMs look up exact answers from an internal database. I now understand they calculate next-token probabilistic distributions based on training weights.
-
-3. How AI Helped
-AI helped accelerate my understanding of technical hardware terms (CPU vs GPU vs NPU) and created active recall questions for Python practice.
-
-4. Verification Experience
-When asking for specific TCL commands, the AI generated believable but incomplete flags. I verified it using OpenSTA documentation, reinforcing the requirement to always check primary sources.
-
-5. Question for Saturday Masterclass
-How do commercial AI EDA tools (like Synopsys.ai or Cadence Cerebrus) guarantee safety and timing convergence when using probabilistic RL/ML models in deterministic physical design flows?
+    main() 
