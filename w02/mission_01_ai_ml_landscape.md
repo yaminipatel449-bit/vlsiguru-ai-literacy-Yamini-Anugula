@@ -18,7 +18,11 @@
                  └── [ Large Language Models (LLMs) ]
 
 `````
-fbbbbbbbbbbbbbbbbbbbbbbbb
-vvvb
-gb
+
+3. Five Key Conceptual Distinctions
+   Automation ≠ AI: Automating a repetitive sequence of CAD tool clicks via a TCL shell script is automation, but it is deterministic and does not involve AI or learning.
+   AI ≠ ML: Expert systems like A* pathfinding algorithms or deterministic state machines are AI techniques, but they do not use machine learning or learn from data.
+   ML Paradigm vs. ML Task: Supervised Learning is a learning paradigm (how a model receives training signals), while Classification is a task type (predicting a discrete category).
+   Deep Learning vs. Traditional ML: Traditional ML (e.g., Linear Regression, Random Forests) relies heavily on hand-engineered features, whereas Deep Learning automatically extracts hierarchical feature representations using deep neural networks.
+   Generative AI vs. Discriminative AI: Discriminative ML models predict labels or numerical values based on input features ($P(Y\vert{}X)$), whereas Generative AI models generate new novel data distributions ($P(X)$).
 
