@@ -5,7 +5,7 @@
 **Track:** Physical Design  
 
 ## Overview
-This directory contains my deliverables for Week 03. The focus of this week was exploring practical AI learning tools, mastering prompt refinement, verifying AI claims against primary sources, and investigating an open-source VLSI tool relevant to my track[cite: 1].
+This directory contains my deliverables for Week 03. The focus of this week was exploring practical AI learning tools, mastering prompt refinement, verifying AI claims against primary sources, and investigating an open-source VLSI tool relevant to my track.
 
 ## Directory Contents
 - `ai_tools_exploration.md`: Log of AI tools tested, prompt engineering experiments, and fact-checking verification.
