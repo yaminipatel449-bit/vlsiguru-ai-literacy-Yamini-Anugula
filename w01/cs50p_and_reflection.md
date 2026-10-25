@@ -24,6 +24,10 @@ def main():
 if __name__ == "__main__":
     main()```
 
+
+-------
+
+
 ### Final Reflection
 1. Most Useful Learning
 The distinction between traditional deterministic software and probabilistic ML models, alongside understanding why hardware accelerators (GPUs/NPUs) are fundamentally required for parallel tensor math.
