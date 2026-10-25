@@ -20,8 +20,6 @@
           └── [ Deep Learning (DL) ]
                  └── [ Generative AI (GenAI) ]
 
-
-
 Explanations:
 Artificial Intelligence (AI): The broad field of computer science focused on building systems capable of performing tasks that typically require human intelligence (e.g., decision making, problem solving).
 
@@ -30,20 +28,3 @@ Machine Learning (ML): A subset of AI where algorithms learn patterns from data 
 Deep Learning (DL): A specialized branch of ML based on multi-layered artificial neural networks capable of learning complex representations from vast datasets.
 
 Generative AI (GenAI): A subfield of Deep Learning focused on creating new, original content (text, code, images, audio) based on learned patterns from training data.
-
-
-Application,Classification,Justification
-Calculator,Rule-based / Traditional Software,Operates on deterministic arithmetic logic; no data learning involved.
-Temperature Warning Rule,Rule-based / Traditional Software,Simple if temp > threshold: trigger_alarm logic.
-Spam Filter,ML-based AI,Learns feature representations to classify emails as spam or legitimate.
-Document Summariser,Generative AI,Uses Large Language Models (LLMs) to synthesize and generate novel text summaries.
-Traffic ETA Prediction,ML-based AI,Uses predictive models trained on historical and real-time temporal spatial data.
-
-
-
-
-Easy Classification: Calculator. It follows hardcoded, deterministic mathematical rules where inputs always produce identical, exact outputs.
-
-Difficult Classification: Traffic ETA Prediction. While simple distance/speed calculations exist, modern ETA relies heavily on historical ML predictions combined with real-time routing algorithms.
-
-Custom Example: Synthesizable Netlist Verification Rule Check. Running a strict DRC/LVS check in layout is rule-based software; predicting congestion hotspots during pre-placement floorplanning using trained GNNs is ML-based AI.
