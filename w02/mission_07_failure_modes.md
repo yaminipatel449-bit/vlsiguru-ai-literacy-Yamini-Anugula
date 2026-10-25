@@ -1,0 +1,9 @@
+# Mission 7: Understand Why ML Systems Fail
+
+## Failure Analysis Table
+
+| Case | Scenario | Likely Root Cause | Evidence to Confirm | Possible Mitigation |
+| :--- | :--- | :--- | :--- | :--- |
+| **Case 1: Excellent Test Results, Disastrous Production Deployment** | An ML timing predictor achieved 99% accuracy during testing but produced huge errors when deployed on a new tapeout. | **Data Leakage / Overfitting to Process Node.** Features derived from future stages (e.g., post-routing parasitics) were accidentally included in pre-placement training features. | Compare feature correlation vectors to verify if post-layout metrics were present during pre-layout inference. | Re-partition datasets strictly by time or project ID; strip out post-layout downstream features from training tables. |
+| **Case 2: High Error Rates on New Fabrication Corner** | A yield prediction model trained on process corner TT failed completely when deployed on SS and FF silicon runs. | **Data Bias / Distribution Shift.** The training dataset lacked representative observations from extreme process corners. | Plot feature distribution histograms comparing training distributions against new test distributions. | Retrain model using balanced stratification across all process corners (TT, FF, SS, FS, SF). |
+| **Case 3: Model Performance Slowly Degrades Over Time** | A IR-drop prediction tool became increasingly inaccurate over 6 months of continuous use in a design team. | **Concept Drift / Data Drift.** The engineering team shifted to a smaller technology node (e.g., 7nm to 5nm) with new cell libraries, changing the underlying physical distribution. | Monitor baseline prediction error continuously over time to detect performance degradation trends. | Establish automated data pipelines to retrain models periodically on recent design runs and library files. |
